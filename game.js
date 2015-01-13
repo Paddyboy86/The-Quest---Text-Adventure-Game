@@ -1,4 +1,4 @@
-var location = function(name, description) {
+var place = function(name, description) {
     
     var locName = function(name){
         this.name = name;
@@ -81,13 +81,13 @@ locationsArray[2].desc = "You are in a deep dark forest.";
 locationsArray[2].item = "torch";
 
 locationsArray[3] = new Location(3);
-locationsArray[3].name = "mount doom";
+locationsArray[3].name = "mountdoom";
 locationsArray[3].desc = "You have entered mount doom. Beware!";
 locationsArray[3].item = "ring of power";
 
 function display(){
 
-    if(locationsArray[playerLocation] === undefined)
+    if(locationsArray[playerLocation] === undefined){
         
        Document.getElementById("descrip").innerHTML =  Document.getElementById("descrip").innerHTML +  "The input is invalid. Please type in a correct one.";
     
@@ -146,7 +146,7 @@ var cabin= new location(name, desc);
 
 var mountain=1;
 var forest=2;
-var mount doom=3;
+var mountdoom=3;
     
     
     
@@ -155,7 +155,7 @@ function interpretThat(text){
 var interpretThat = {
 action : function(){
 
-var
+
     
 }
 
@@ -169,7 +169,7 @@ objectElement.action}
     
 function report(objectElement){
     for(var i=0,i<11,i++){
-document.getElementById('inventory').innerHTML= objectElement.items[i]
+document.getElementById('inventory').innerHTML= objectElement.items[i];
     }
 };   
     
