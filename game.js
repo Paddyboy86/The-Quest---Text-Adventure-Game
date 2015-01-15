@@ -168,7 +168,7 @@ objectElement.action}
 };
     
 function report(objectElement){
-    for(var i=0,i<11,i++){
+    for(var i=0,i < 11,i++){
 document.getElementById('inventory').innerHTML= objectElement.items[i];
     }
 };   
